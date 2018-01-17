@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.fixed-top {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.navbar-expand-lg {
+  justify-content: center; }
+  .navbar-expand-lg a {
+    color: #fff;
+    padding: 0 4rem 0 4rem;
+    transition: 0.5s; }
+    .navbar-expand-lg a:hover {
+      color: #1abc9c; }
+
+.jumbotron {
+  background-image: url("../new-images/hero.jpg");
+  height: 100vh;
+  background-size: 100% 100%; }
+  .jumbotron h1, .jumbotron h5 {
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
