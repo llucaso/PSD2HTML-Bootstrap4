@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Quicksand", sans-serif; }
 
 .fixed-top {
   background-color: rgba(255, 255, 255, 0.1); }
@@ -8,6 +10,7 @@
 .navbar-expand-lg {
   justify-content: center; }
   .navbar-expand-lg a {
+    font-family: "Quicksand" sans-serif !important;
     color: #fff;
     padding: 0 4rem 0 4rem;
     transition: 0.5s; }
@@ -15,10 +18,65 @@
       color: #1abc9c; }
 
 .jumbotron {
+  margin: 0;
   background-image: url("../new-images/hero.jpg");
   height: 100vh;
-  background-size: 100% 100%; }
-  .jumbotron h1, .jumbotron h5 {
-    color: #fff; }
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .jumbotron h1 {
+    font-family: "Quicksand" sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    size: 38px; }
+  .jumbotron h5 {
+    color: #fff;
+    font-weight: 400; }
+
+.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  transition: 0.5s; }
+  .btn-primary:hover {
+    border-radius: 25px;
+    background-color: #1abc9c;
+    border-color: #1abc9c; }
+
+.social-container {
+  position: absolute;
+  bottom: 0;
+  color: #ffff;
+  font-size: 30px; }
+  .social-container .fa {
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s; }
+    .social-container .fa:hover {
+      color: #1abc9c;
+      font-size: 40px; }
+
+.photoapp {
+  display: flex;
+  height: 500px;
+  background-color: #f5f6f7; }
+  .photoapp .text {
+    height: 100%;
+    background-image: url("../new-images/hand-phone.jpg");
+    background-repeat: no-repeat;
+    background-position: right; }
+    .photoapp .text h4 {
+      margin-top: 100px;
+      text-transform: uppercase;
+      color: #1abc9c; }
+    .photoapp .text p {
+      margin-top: 30px;
+      margin-bottom: 50px; }
+
+@media screen and (max-width: 1080px) {
+  .photoapp .text {
+    background-image: none; } }
 
 /*# sourceMappingURL=main.css.map */

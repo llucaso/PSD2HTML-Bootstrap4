@@ -1,6 +1,9 @@
 ﻿*
 	margin: 0
 	padding: 0
+	font-family: "Quicksand", sans-serif
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext')
 
 =size($size)
 	width: $size
@@ -12,23 +15,82 @@
 	-ms-border-radius: $radius
 	border-radius: $radius
 
+$font: "Quicksand" sans-serif
+$color: #1abc9c
 
-//nav
+//NAVIGATION
 .fixed-top
 	background-color: rgba(255, 255, 255, 0.1)
 .navbar-expand-lg
 	justify-content: center
 	a
-
+		font-family: $font !important //not working
 		color: #fff
 		padding: 0 4rem 0 4rem
 		transition: 0.5s
 		&:hover
-			color: #1abc9c
-//header
+			color: $color
+//HEADER
 .jumbotron
+	margin: 0
 	background-image: url('../new-images/hero.jpg')
 	height: 100vh
 	background-size: 100% 100%
-	h1, h5
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	h1
+		font-family: $font
+		font-weight: 700
+		text-transform: uppercase
 		color: #fff
+		size: 38px
+	h5
+		color: #fff
+		font-weight: 400
+.btn-primary
+	background-color: $color
+	border-color: $color
+	transition: 0.5s
+	&:hover
+		border-radius: 25px
+		background-color: $color
+		border-color: $color
+
+.social-container
+	position: absolute
+	bottom: 0
+	color: #ffff
+	font-size: 30px
+	.fa
+		cursor: pointer
+		margin: 10px
+		transition: 0.5s
+		&:hover
+			color: $color
+			font-size: 40px
+
+//PHOTOAPP
+.photoapp
+	display: flex
+	height: 500px
+	background-color: #f5f6f7
+	.text
+		height: 100%
+		background-image: url('../new-images/hand-phone.jpg')
+		background-repeat: no-repeat
+		background-position: right
+		h4
+			margin-top: 100px
+			text-transform: uppercase
+			color: $color
+		p
+			margin-top: 30px
+			margin-bottom: 50px
+@media screen and (max-width: 1080px)
+	.photoapp
+		.text
+			background-image: none
+
+	
