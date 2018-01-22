@@ -1,33 +1,22 @@
-$(document).ready(function() {
+$(function() {
+	// var numberOfActiveSlide = $('.active').data('number');
 
-  var toggleAffix = function(affixElement, scrollElement, wrapper) {
-  
-    var height = affixElement.outerHeight(),
-        top = wrapper.offset().top;
-    
-    if (scrollElement.scrollTop() >= top){
-        wrapper.height(height);
-        affixElement.addClass("affix");
-    }
-    else {
-        affixElement.removeClass("affix");
-        wrapper.height('auto');
-    }
-      
-  };
-  
 
-  $('[data-toggle="affix"]').each(function() {
-    var ele = $(this),
-        wrapper = $('<div></div>');
-    
-    ele.before(wrapper);
-    $(window).on('scroll resize', function() {
-        toggleAffix(ele, $(this), wrapper);
-    });
-    
-    // init
-    toggleAffix(ele, $(window), wrapper);
-  });
-  
+	
+
+
+
+
+	// function numberChanger() {
+	// 	var numberOfActiveSlide = $('.active').data('number');
+	// 	$('.activeNumber').text(numberOfActiveSlide);
+
+	// };
+
+$('#designControls').on('slid.bs.carousel', function() {
+		var currentSlideName = $('#design-id');
+		var activeSlideNumber = $('div.active').data('number');
+		currentSlideName.text(activeSlideNumber);
+	});
+
 });

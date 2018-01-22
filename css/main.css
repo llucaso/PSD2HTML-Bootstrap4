@@ -2,7 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: "Quicksand", sans-serif; }
+
+h1, h5, h4 {
+  overflow: hidden; }
 
 .fixed-top {
   background-color: rgba(255, 255, 255, 0.1); }
@@ -60,7 +64,7 @@
 
 .photoapp {
   display: flex;
-  height: 500px;
+  height: 400px;
   background-color: #f5f6f7; }
   .photoapp .text {
     height: 100%;
@@ -77,19 +81,76 @@
 
 @media screen and (max-width: 1080px) {
   .photoapp .text {
-    background-image: none; } }
+    background-image: none; }
+    .photoapp .text h4 {
+      margin-top: 45px; } }
 
-.carousel {
-  width: 300px;
-  height: 100px; }
+.download {
+  margin: 0 auto; }
+
+.slider-text .btn {
+  display: block;
+  margin-bottom: 20px; }
+
+.slider-text a {
+  color: #000000;
+  text-decoration: none; }
 
 .slider-text h4 {
   margin-top: 100px;
   text-transform: uppercase;
-  color: #1abc9c; }
+  color: #1abc9c;
+  overflow: hidden; }
 
 .slider-text p {
   margin-top: 30px;
   margin-bottom: 50px; }
+
+.slider-text a {
+  font-size: 30px; }
+  .slider-text a i {
+    margin: 10px 0px 0px 10px;
+    font-weight: 700; }
+
+.controler {
+  margin-left: 12px; }
+
+.carousel-item img {
+  margin: 0 auto; }
+
+.community {
+  background-color: #f5f6f7; }
+  .community div {
+    margin: 0 auto; }
+
+.our-community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .our-community .text-our-comminity {
+    margin-top: 25px; }
+    .our-community .text-our-comminity h4, .our-community .text-our-comminity p {
+      text-align: center; }
+
+.community-slide img {
+  width: 100%; }
+
+.control-panel {
+  display: flex;
+  justify-content: flex-end; }
+  .control-panel a {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700; }
+    .control-panel a i {
+      margin: 10px 10px 0px 10px;
+      font-weight: 700; }
+
+@media screen and (max-width: 991px) {
+  .community div {
+    margin-top: 10px; }
+  .control-panel {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

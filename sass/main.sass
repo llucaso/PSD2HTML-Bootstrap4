@@ -1,22 +1,23 @@
 ﻿*
 	margin: 0
 	padding: 0
+	overflow-x: hidden
 	font-family: "Quicksand", sans-serif
-
+h1, h5, h4
+	overflow: hidden
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext')
-
 =size($size)
 	width: $size
 	height: $size
-
 =border-radius($radius)
 	-webkit-border-radius: $radius
 	-moz-border-radius: $radius
 	-ms-border-radius: $radius
 	border-radius: $radius
-
 $font: "Quicksand" sans-serif
+
 $color: #1abc9c
+$bg-color: #f5f6f7
 
 //NAVIGATION
 .fixed-top
@@ -30,6 +31,7 @@ $color: #1abc9c
 		transition: 0.5s
 		&:hover
 			color: $color
+
 //HEADER
 .jumbotron
 	margin: 0
@@ -57,7 +59,6 @@ $color: #1abc9c
 		border-radius: 25px
 		background-color: $color
 		border-color: $color
-
 .social-container
 	position: absolute
 	bottom: 0
@@ -71,12 +72,10 @@ $color: #1abc9c
 			color: $color
 			font-size: 40px
 
-
-
 //PHOTOAPP
 .photoapp
 	display: flex
-	height: 500px
+	height: 400px
 	background-color: #f5f6f7
 	.text
 		height: 100%
@@ -94,18 +93,79 @@ $color: #1abc9c
 	.photoapp
 		.text
 			background-image: none
+			h4
+				margin-top: 45px
 
-	
 //CAROUSEL
-.carousel
-	width: 300px
-	height: 100px
+.download
+	margin: 0 auto
 
 .slider-text
+	.btn
+		display: block
+		margin-bottom: 20px
+	a
+		color: #000000
+		text-decoration: none
 	h4
 			margin-top: 100px
 			text-transform: uppercase
 			color: $color
+			overflow: hidden
 	p
 		margin-top: 30px
 		margin-bottom: 50px
+.slider-text
+	a
+		font-size: 30px
+		i
+			margin: 10px 0px 0px 10px
+			font-weight: 700
+.controler
+	margin-left: 12px
+
+.carousel-item
+	img
+		margin: 0 auto
+
+// COMMUNITY
+.community
+	background-color: $bg-color
+	div
+		margin: 0 auto
+.our-community
+	// background-image: url('../new-images/logo-green.png')
+	// background-repeat: no-repeat
+	// background-position: center
+	// background-size: 150%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+	.text-our-comminity
+		margin-top: 25px
+		h4, p
+			text-align: center
+
+
+.community-slide
+	img
+		width: 100%
+.control-panel
+	display: flex
+	justify-content: flex-end
+	a
+		font-size: 30px
+		color: #000000
+		font-weight: 700
+		i
+			margin: 10px 10px 0px 10px
+			font-weight: 700
+
+@media screen and (max-width: 991px)
+	.community
+		div
+			margin-top: 10px
+	.control-panel
+		display: none
