@@ -5,7 +5,7 @@
   overflow-x: hidden;
   font-family: "Quicksand", sans-serif; }
 
-h1, h5, h4 {
+h1, h5, h4, h3 {
   overflow: hidden; }
 
 .fixed-top {
@@ -85,26 +85,28 @@ h1, h5, h4 {
     .photoapp .text h4 {
       margin-top: 45px; } }
 
+#design {
+  margin-top: 50px; }
+
 .download {
   margin: 0 auto; }
 
-.slider-text .btn {
-  display: block;
-  margin-bottom: 20px; }
-
-.slider-text a {
-  color: #000000;
-  text-decoration: none; }
-
-.slider-text h4 {
-  margin-top: 100px;
-  text-transform: uppercase;
-  color: #1abc9c;
-  overflow: hidden; }
-
-.slider-text p {
-  margin-top: 30px;
-  margin-bottom: 50px; }
+.slider-text {
+  padding-left: 0; }
+  .slider-text .btn {
+    display: block;
+    margin-bottom: 20px; }
+  .slider-text a {
+    color: #000000;
+    text-decoration: none; }
+  .slider-text h4 {
+    margin-top: 100px;
+    text-transform: uppercase;
+    color: #1abc9c;
+    overflow: hidden; }
+  .slider-text p {
+    margin-top: 30px;
+    margin-bottom: 50px; }
 
 .slider-text a {
   font-size: 30px; }
@@ -119,7 +121,8 @@ h1, h5, h4 {
   margin: 0 auto; }
 
 .community {
-  background-color: #f5f6f7; }
+  background-color: #f5f6f7;
+  padding: 50px; }
   .community div {
     margin: 0 auto; }
 
@@ -152,5 +155,29 @@ h1, h5, h4 {
     margin-top: 10px; }
   .control-panel {
     display: none; } }
+
+.sub-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url("../new-images/parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .sub-div h3 {
+    color: #ffffff;
+    text-align: center; }
+
+.mb-3 {
+  width: 300px; }
+
+.fa-check {
+  margin-top: 6px; }
+
+#footer {
+  height: 1000px; }
 
 /*# sourceMappingURL=main.css.map */

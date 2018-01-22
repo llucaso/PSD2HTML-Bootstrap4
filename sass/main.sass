@@ -3,9 +3,11 @@
 	padding: 0
 	overflow-x: hidden
 	font-family: "Quicksand", sans-serif
-h1, h5, h4
+h1, h5, h4, h3
 	overflow: hidden
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext')
+
 =size($size)
 	width: $size
 	height: $size
@@ -14,8 +16,8 @@ h1, h5, h4
 	-moz-border-radius: $radius
 	-ms-border-radius: $radius
 	border-radius: $radius
-$font: "Quicksand" sans-serif
 
+$font: "Quicksand" sans-serif
 $color: #1abc9c
 $bg-color: #f5f6f7
 
@@ -73,6 +75,7 @@ $bg-color: #f5f6f7
 			font-size: 40px
 
 //PHOTOAPP
+
 .photoapp
 	display: flex
 	height: 400px
@@ -96,11 +99,14 @@ $bg-color: #f5f6f7
 			h4
 				margin-top: 45px
 
-//CAROUSEL
+//DESIGN
+#design
+	margin-top: 50px
 .download
 	margin: 0 auto
 
 .slider-text
+	padding-left: 0
 	.btn
 		display: block
 		margin-bottom: 20px
@@ -129,29 +135,26 @@ $bg-color: #f5f6f7
 		margin: 0 auto
 
 // COMMUNITY
+
 .community
 	background-color: $bg-color
+	padding: 50px
 	div
 		margin: 0 auto
 .our-community
-	// background-image: url('../new-images/logo-green.png')
-	// background-repeat: no-repeat
-	// background-position: center
-	// background-size: 150%
 	display: flex
 	justify-content: center
 	align-items: center
 	flex-direction: column
-
 	.text-our-comminity
 		margin-top: 25px
 		h4, p
 			text-align: center
 
-
 .community-slide
 	img
 		width: 100%
+
 .control-panel
 	display: flex
 	justify-content: flex-end
@@ -169,3 +172,34 @@ $bg-color: #f5f6f7
 			margin-top: 10px
 	.control-panel
 		display: none
+
+//SUBSCRIBE
+
+.sub-div
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	height: 500px
+	background-image: url('../new-images/parallax.jpg')
+	background-attachment: fixed
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	h3
+		color: #ffffff
+		text-align: center
+.mb-3
+	width: 300px
+.fa-check
+	margin-top: 6px
+
+
+
+
+
+
+//FOOTER
+#footer
+	height: 1000px
+
