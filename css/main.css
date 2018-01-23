@@ -177,6 +177,22 @@ h1, h5, h4, h3 {
 .fa-check {
   margin-top: 6px; }
 
+#download {
+  background-color: #f5f6f7; }
+  #download .download-text h4 {
+    text-align: center; }
+  #download .download-text p {
+    text-align: center; }
+
+.apple-icon {
+  background-color: #16A085;
+  cursor: pointer !important;
+  pointer-events: none; }
+
+.play-icon {
+  background-color: #16A085;
+  pointer-events: none; }
+
 #footer {
   height: 1000px; }
 
