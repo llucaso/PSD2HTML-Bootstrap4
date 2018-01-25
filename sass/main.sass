@@ -5,6 +5,10 @@
 	font-family: "Quicksand", sans-serif
 h1, h5, h4, h3
 	overflow: hidden
+body
+	position: relative
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext')
 
@@ -23,17 +27,46 @@ $color-hover: #16A085
 $bg-color: #f5f6f7
 
 //NAVIGATION
-.fixed-top
-	background-color: rgba(255, 255, 255, 0.1)
+.active
+	color: #1abc9c !important
+.bg-light
+	background-color: rgba(0, 0, 0, 0.5) !important
 .navbar-expand-lg
-	justify-content: center
-	a
-		font-family: $font !important //not working
-		color: #fff
-		padding: 0 4rem 0 4rem
+	justify-content: end
+	position: fixed
+	width: 100%
+	z-index: 110
+
+.navbar-dark
+	.navbar-nav
+
+		.nav-link
+			margin: 15px 40px 15px 40px
+
+			color: #ffffff
+			font-weight: 900
+			letter-spacing: 4px
+			transition: 0.5s
+			&:hover
+				color: $color
+
+@media (min-width: 992px)
+	.navbar
+		height: 120px
+		overflow-x: none
 		transition: 0.5s
-		&:hover
-			color: $color
+	.navbar-expand-lg
+		.navbar-collapse
+			justify-content: center
+
+@media (max-width: 991px)
+	.navbar-expand-lg
+		.navbar-collapse
+			ul
+				li
+					margin-left: -30px
+					img
+						display: none
 
 //HEADER
 .jumbotron
@@ -108,7 +141,12 @@ $bg-color: #f5f6f7
 		.text
 			background-image: none
 			h4
-				margin-top: 45px
+				margin-top: 50px
+@media screen and (max-width: 780px)
+	.photoapp
+		.text
+			h4
+				margin-top: 30px
 
 //DESIGN
 #design
@@ -144,6 +182,13 @@ $bg-color: #f5f6f7
 .carousel-item
 	img
 		margin: 0 auto
+
+@media screen and (max-width: 1080px)
+	#design
+		div
+			div
+				h4
+					margin-top: 0px
 
 // COMMUNITY
 
@@ -241,6 +286,8 @@ $bg-color: #f5f6f7
 //FOOTER
 #footer
 	div
+		margin-left: 10px
+		display: inline-block
 		div
 			margin-top: 30px
 			margin-bottom: 30px
@@ -266,13 +313,14 @@ $bg-color: #f5f6f7
 
 		div		
 			img
-				float: right
-				margin-right: 50px
+				display: inline-block
+				position: absolute
+				right: 50px
 
-@media screen and (max-width: 960px)
+
+@media screen and (max-width: 370px)
 	#footer
-	div
 		div
-			img
-				margin: 0 auto
-				float: none
+			div
+				img
+					display: none

@@ -11,16 +11,35 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<title>Bootstrap.v4</title>
 	</head>
-	<body>
-		<div class="container">
-			<nav class="navbar fixed-top  navbar-expand-lg ">
-				<a class="navbar-brand" href="#">HOME</a>
-				<a class="navbar-brand" href="#">PHOTOAPP</a>
-				<a class="navbar-brand logo" href="#"><img src="new-images/logo.png"></a>
-				<a class="navbar-brand" href="#">DESIGN</a>
-				<a class="navbar-brand" href="#">DOWNLOAD</a>
-			</nav>
-		</div>
+	<body data-spy="scroll" data-target="#navigation-bar">
+		<div id="navigation-bar">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link" href="#jumbotron">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#photoapp">PHOTOAPP</a>
+					</li>
+					<li><img src="new-images/logo.png"></li>
+					<li class="nav-item">
+						<a class="nav-link" href="#design">DESIGN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#download">DOWNLOAD</a>
+					</li>
+				</ul>
+    
+			</div>
+		</nav>
+	</div>
+
 		
 		<section id="jumbotron">
 			<div class="jumbotron jumbotron-fluid">
@@ -168,20 +187,18 @@
 				</div>
 			</div>
 		</section>
+
 		<section id="footer">
-			<div class="container-fluid row">
-				<div class="container-fluid col-lg-6 col-md-12">
-				<a class="credits" href="">credits</a>
-				<a class="privacy" href="">privacy</a>
-				<a class="teams" href="">our teams</a>
-				<br><p>From PSD to HTML by lredzinski</p>
-
+			<div>
+				<div>
+					<a class="credits" href="">credits</a>
+					<a class="privacy" href="">privacy</a>
+					<a class="teams" href="">our teams</a>
+					<br><p>From PSD to HTML by lredzinski</p>
 				</div>
-				<div class="container-fluid col-lg-6 col-md-12">
-					<img src="new-images/logo-green.png"></a>
-					
-
-				</div>
+				<div>
+					<img src="new-images/logo-green.png">
+				<div>
 			</div>
 			
 

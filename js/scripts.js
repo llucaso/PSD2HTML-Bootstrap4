@@ -1,17 +1,7 @@
 $(function() {
-	// var numberOfActiveSlide = $('.active').data('number');
 
+	$('body').scrollspy({ target: '#navigation-bar' });
 
-	
-
-
-
-
-	// function numberChanger() {
-	// 	var numberOfActiveSlide = $('.active').data('number');
-	// 	$('.activeNumber').text(numberOfActiveSlide);
-
-	// };
 
 $('#designControls').on('slid.bs.carousel', function() {
 		var currentSlideName = $('#design-id');
