@@ -41,13 +41,23 @@ h1, h5, h4, h3 {
     font-weight: 400; }
 
 .btn-primary {
+  display: inline-block;
+  margin: 20px 0;
+  border: none;
   background-color: #1abc9c;
-  border-color: #1abc9c;
-  transition: 0.5s; }
+  border-radius: 4px;
+  padding: 15px 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: .5s; }
   .btn-primary:hover {
     border-radius: 25px;
-    background-color: #1abc9c;
-    border-color: #1abc9c; }
+    background-color: #16A085; }
 
 .social-container {
   position: absolute;
@@ -169,7 +179,10 @@ h1, h5, h4, h3 {
   background-size: cover; }
   .sub-div h3 {
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 30px; }
+  .sub-div .input-group-append button {
+    margin: 0; }
 
 .mb-3 {
   width: 300px; }
@@ -178,22 +191,61 @@ h1, h5, h4, h3 {
   margin-top: 6px; }
 
 #download {
+  padding: 50px;
   background-color: #f5f6f7; }
   #download .download-text h4 {
     text-align: center; }
   #download .download-text p {
     text-align: center; }
 
-.apple-icon {
-  background-color: #16A085;
-  cursor: pointer !important;
-  pointer-events: none; }
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
-.play-icon {
-  background-color: #16A085;
-  pointer-events: none; }
+.apple, .play {
+  margin-right: 20px;
+  border-radius: 4px;
+  padding: 0 0 0 30px; }
 
-#footer {
-  height: 1000px; }
+.fa-apple, .fa-android {
+  display: inline-flex;
+  font-size: 20px;
+  background-color: #16A085;
+  padding: 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  margin-left: 30px; }
+
+#footer div div {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #footer div div .credits, #footer div div .privacy {
+    text-decoration: none;
+    font-weight: 900;
+    color: #000000;
+    transition: 0.5s; }
+    #footer div div .credits:hover, #footer div div .privacy:hover {
+      color: #16A085; }
+    #footer div div .credits:after, #footer div div .privacy:after {
+      content: " |";
+      font-weight: 900;
+      color: #1abc9c; }
+  #footer div div .teams {
+    text-decoration: none;
+    font-weight: 900;
+    color: #000000;
+    transition: 0.5s; }
+    #footer div div .teams:hover {
+      color: #16A085; }
+
+#footer div div img {
+  float: right;
+  margin-right: 50px; }
+
+@media screen and (max-width: 960px) {
+  div div img {
+    margin: 0 auto;
+    float: none; } }
 
 /*# sourceMappingURL=main.css.map */

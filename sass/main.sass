@@ -55,13 +55,23 @@ $bg-color: #f5f6f7
 		color: #fff
 		font-weight: 400
 .btn-primary
+	display: inline-block
+	margin: 20px 0
+	border: none
 	background-color: $color
-	border-color: $color
-	transition: 0.5s
+	border-radius: 4px
+	padding: 15px 30px
+	color: #ffffff
+	font-weight: 700
+	font-size: 12px
+	text-transform: uppercase
+	cursor: pointer
+	text-decoration: none
+	letter-spacing: 3px
+	transition: .5s
 	&:hover
 		border-radius: 25px
-		background-color: $color
-		border-color: $color
+		background-color: #16A085
 .social-container
 	position: absolute
 	bottom: 0
@@ -190,6 +200,10 @@ $bg-color: #f5f6f7
 	h3
 		color: #ffffff
 		text-align: center
+		margin-bottom: 30px
+	.input-group-append
+		button
+			margin: 0
 .mb-3
 	width: 300px
 .fa-check
@@ -197,24 +211,68 @@ $bg-color: #f5f6f7
 
 //DOWNLOAD
 #download
+	padding: 50px
 	background-color: $bg-color
 	.download-text
 		h4
 			text-align: center
 		p
 			text-align: center
-
-.apple-icon
+.download-buttons
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+.apple, .play
+	margin-right: 20px
+	border-radius: 4px
+	padding: 0 0 0 30px
+.fa-apple, .fa-android
+	display: inline-flex
+	font-size: 20px
 	background-color: $color-hover
-	cursor: pointer !important
-	pointer-events: none
+	padding: 15px
+	border: none
+	border-radius: 0 4px 4px 0
+	margin-left: 30px
 
-.play-icon
-	background-color: $color-hover
-	pointer-events: none
+
 
 
 //FOOTER
 #footer
-	height: 1000px
+	div
+		div
+			margin-top: 30px
+			margin-bottom: 30px
+			.credits, .privacy
+				text-decoration: none
+				font-weight: 900
+				color: #000000
+				transition: 0.5s
+				&:hover
+					color: $color-hover
+				&:after
+					content: " |"
+					font-weight: 900
+					color: $color
 
+			.teams
+				text-decoration: none
+				font-weight: 900
+				color: #000000
+				transition: 0.5s
+				&:hover
+					color: $color-hover
+
+		div		
+			img
+				float: right
+				margin-right: 50px
+
+@media screen and (max-width: 960px)
+	#footer
+	div
+		div
+			img
+				margin: 0 auto
+				float: none
