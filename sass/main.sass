@@ -27,15 +27,17 @@ $color-hover: #16A085
 $bg-color: #f5f6f7
 
 //NAVIGATION
+
 .active
 	color: #1abc9c !important
 .bg-light
-	background-color: rgba(0, 0, 0, 0.5) !important
+	background-color: rgba(0, 0, 0, 0.1) !important
 .navbar-expand-lg
 	justify-content: end
 	position: fixed
 	width: 100%
 	z-index: 110
+	transition: 0.5s
 
 .navbar-dark
 	.navbar-nav
@@ -51,9 +53,12 @@ $bg-color: #f5f6f7
 				color: $color
 
 @media (min-width: 992px)
+	.shrink
+		height: 80px !important
+		background-color: rgba(0, 0, 0, 0.7) !important
 	.navbar
 		height: 120px
-		overflow-x: none
+		overflow: hidden
 		transition: 0.5s
 	.navbar-expand-lg
 		.navbar-collapse
@@ -61,6 +66,7 @@ $bg-color: #f5f6f7
 
 @media (max-width: 991px)
 	.navbar-expand-lg
+		background-color: rgba(0, 0, 0, 0.7) !important
 		.navbar-collapse
 			ul
 				li
