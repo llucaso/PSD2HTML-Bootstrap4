@@ -42,7 +42,7 @@
     dynamic: {
         files: [{
             expand: true,
-            cwd: 'new-images/',
+            cwd: 'images/',
             src: ['**/*.{png,jpg,gif}'],
             dest: 'new-images/build/'
         }]

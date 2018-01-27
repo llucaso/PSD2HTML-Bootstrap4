@@ -53,6 +53,7 @@ body {
         display: none; } }
 
 .jumbotron {
+  position: relative;
   margin: 0;
   background-image: url("../new-images/hero.jpg");
   height: 100vh;
@@ -283,7 +284,8 @@ body {
   #footer div div img {
     display: inline-block;
     position: absolute;
-    right: 50px; }
+    right: 50px;
+    bottom: 60px; }
 
 @media screen and (max-width: 370px) {
   #footer div div img {
